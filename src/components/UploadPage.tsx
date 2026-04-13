@@ -157,9 +157,16 @@ export default function UploadPage() {
                 <div className="flex h-9 w-9 items-center justify-center rounded-[10px] bg-[#2e2640]">
                   ✨
                 </div>
-                <span className="rounded-full bg-[#402659] px-3 py-1 text-xs font-semibold text-[#b373f2]">
-                  精度优先
-                </span>
+                <div className="flex items-center gap-2">
+                  <span className="rounded-full bg-[#402659] px-3 py-1 text-xs font-semibold text-[#b373f2]">
+                    精度优先
+                  </span>
+                  {parseMode === "ai" && (
+                    <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#7b59cc]">
+                      <span className="text-[10px] text-white">✓</span>
+                    </div>
+                  )}
+                </div>
               </div>
               <p className="text-lg font-bold text-white">AI 智能深度解析</p>
               <p className="text-[13px] leading-[22px] text-[#80808c]">
